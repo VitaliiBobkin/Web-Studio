@@ -10,6 +10,17 @@
 
 <body>
 	<header class="header">
+		<div class="burger">
+			<span></span>
+			<div class="sidebar">
+				<p>
+					Custom frontend without custom code
+					Webstudio is an open source website builder that empowers 
+					creators to build highly maintainable and fast websites using modern web standards.
+				</p>
+			</div>
+		</div>
+
 		<div class="container header-container">
 			<a class="header-logo" href="#">
 				<img src="images/header-logo.svg" alt="WebStudio" width="145" height="31">
@@ -18,12 +29,44 @@
 				<a class="active" href="#">Studio</a>
 				<a href="portfolio.html">Portfolio</a>
 				<a href="#">Contacts</a>
+				
+				<div class="header-nav-dropdown">
+					<div class="header-info-item">
+						<p class="dropdown-title">Community</p>
+					</div>
+					<ul class="dropdown-content column">
+						<li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+						<li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+						<li class="has-submenu">
+						  <div class="submenu-trigger">
+							<i class="arrow left"></i>
+							<a href="https://www.youtube.com" target="_blank">YouTube</a>
+						  </div>
+						  <ul class="sub-menu">
+							<li><a href="https://www.youtube.com/watch?v=_DC427IPBeU&ab_channel=Webstudio" target="_blank">Hero Section</a></li>
+							<li><a href="https://www.youtube.com/watch?v=0bokBySzEEo&ab_channel=Webstudio" target="_blank">Feature Section</a></li>
+							<li><a href="https://www.youtube.com/watch?v=Kpw8ldwAUr8&ab_channel=Webstudio" target="_blank">Pricing Section</a></li>
+						  </ul>
+						</li>
+						<li><a href="https://www.tiktok.com" target="_blank">TikTok</a></li>
+						<li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+					</ul>
+				</div>
 			</nav>
 
 			<div class="header-info">
-				<a href="mailto:info@devstudio.com">info@devstudio.com</a>
-				<a href="tel:+380961111111">+38 096 111 11 11</a>
-			</div>
+				<div class="header-info-item">
+				  <p class="dropdown-title">Info</p>
+				</div>
+				<div class="header-nav-wrapper">
+				  <nav class="header-nav">
+					<ul>
+					  <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+					  <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+					</ul>
+				  </nav>
+				</div>
+			</div>			  
 		</div>
 	</header>
 
