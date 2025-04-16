@@ -12,13 +12,13 @@
 	<header class="header">
 		<div class="burger">
 			<span></span>
-			<div class="sidebar">
-				<p>
-					Custom frontend without custom code
-					Webstudio is an open source website builder that empowers 
-					creators to build highly maintainable and fast websites using modern web standards.
-				</p>
-			</div>
+		</div>
+		<div class="sidebar">
+			<p>
+				Custom frontend without custom code
+				Webstudio is an open source website builder that empowers 
+				creators to build highly maintainable and fast websites using modern web standards.
+			</p>
 		</div>
 
 		<div class="container header-container">
@@ -83,22 +83,33 @@
 		<section class="about">
 			<div class="container about-cards">
 				<div class="about-card">
-					<h2>Attention to detail</h2>
-					<p>Ideological considerations, as well as the beginning of the daily work of forming a position.</p>
+					<div class="about-icon icon-detail"></div>
+					<div class="about-desc">
+						<h2>Attention to detail</h2>
+						<p>Ideological considerations, as well as the beginning of the daily work of forming a position.</p>
+					</div>
 				</div>
 				<div class="about-card">
-					<h2>Punctuality</h2>
-					<p>The task of the organization, in particular the scope and location of personnel training, entails.</p>
+					<div class="about-icon icon-punctual"></div>
+					<div class="about-desc">
+						<h2>Punctuality</h2>
+						<p>The task of the organization, in particular the scope and location of personnel training, entails.</p>
+					</div>
 				</div>
 				<div class="about-card">
-					<h2>Planning</h2>
-					<p>Equally, consultation with a broad asset is largely conditional.</p>
-				</div>
+					<div class="about-icon icon-planning"></div>
+					<div class="about-desc">
+						<h2>Planning</h2>
+						<p>Equally, consultation with a broad asset is largely conditional.</p>
+					</div>
+				</div>	
 				<div class="about-card">
-					<h2>Modern technologies</h2>
-					<p>The significance of these problems is so obvious that the implementation of planned targets.</p>
+					<div class="about-icon icon-tech"></div>
+					<div class="about-desc">
+						<h2>Modern technologies</h2>
+						<p>The significance of these problems is so obvious that the implementation of planned targets.</p>
+					</div>
 				</div>
-			</div>
 		</section>
 
 		<section class="do">
@@ -126,21 +137,53 @@
 						<img src="images/team-1.jpg" alt="content image" width="370" height="294">
 						<p class="team-name">Igor Demyanenko</p>
 						<p class="team-profession">Product Designer</p>
+						<div class="team-socials">
+							<ul>
+								<li><a href="#"><i class="social-icon instagram"></i></a></li>
+								<li><a href="#"><i class="social-icon twitter"></i></a></li>
+								<li><a href="#"><i class="social-icon facebook"></i></a></li>
+								<li><a href="#"><i class="social-icon linkedin"></i></a></li>
+							</ul>
+						</div>
 					</div>
 					<div class="team-card">
 						<img src="images/team-2.jpg" alt="content image" width="370" height="294">
 						<p class="team-name">Olga Repina</p>
 						<p class="team-profession">Frontenf Developer</p>
+						<div class="team-socials">
+							<ul>
+								<li><a href="#"><i class="social-icon instagram"></i></a></li>
+								<li><a href="#"><i class="social-icon twitter"></i></a></li>
+								<li><a href="#"><i class="social-icon facebook"></i></a></li>
+								<li><a href="#"><i class="social-icon linkedin"></i></a></li>
+							</ul>
+						</div>
 					</div>
 					<div class="team-card">
 						<img src="images/team-3.jpg" alt="content image" width="370" height="294">
 						<p class="team-name">Nikolay Tarasov</p>
 						<p class="team-profession">Marketing</p>
+						<div class="team-socials">
+							<ul>
+								<li><a href="#"><i class="social-icon instagram"></i></a></li>
+								<li><a href="#"><i class="social-icon twitter"></i></a></li>
+								<li><a href="#"><i class="social-icon facebook"></i></a></li>
+								<li><a href="#"><i class="social-icon linkedin"></i></a></li>
+							</ul>
+						</div>
 					</div>
 					<div class="team-card">
 						<img src="images/team-4.jpg" alt="content image" width="370" height="294">
 						<p class="team-name">Mikhail Ermakov</p>
 						<p class="team-profession">UI Designer</p>
+						<div class="team-socials">
+							<ul>
+								<li><a href="#"><i class="social-icon instagram"></i></a></li>
+								<li><a href="#"><i class="social-icon twitter"></i></a></li>
+								<li><a href="#"><i class="social-icon facebook"></i></a></li>
+								<li><a href="#"><i class="social-icon linkedin"></i></a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -149,14 +192,26 @@
 
 	<footer class="footer">
 		<div class="container footer-container">
-			<div class="footer-logo">
-				<img src="images/footer-logo.svg" alt="WebStudio" width="145" height="31">
+			<div class="footer-logo-wrapper">	
+				<div class="footer-logo">
+					<img src="images/footer-logo.svg" alt="WebStudio" width="145" height="31">
+				</div>
+	
+				<div class="footer-info">
+					<p class="footer-address">Kharkov, Pobedy Ave., 26</p>
+					<a class="footer-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+					<a class="footer-link" href="tel:+380961111111">+38 096 111 11 11</a>		
+				</div>
 			</div>
-
-			<div>
-				<p class="footer-address">Kharkov, Pobedy Ave., 26</p>
-				<p class="footer-link">info@example.com</p>
-				<p class="footer-link">+38 099 111 11 11</p>		
+			
+			<div class="footer-socials">
+				<p class="footer-title">Join us</p>
+				<ul class="footer-icons">
+					<li><a href="#"><i class="footer-icon instagram"></i></a></li>	
+					<li><a href="#"><i class="footer-icon twitter"></i></a></li>
+					<li><a href="#"><i class="footer-icon facebook"></i></a></li>
+					<li><a href="#"><i class="footer-icon linkedin"></i></a></li>
+				</ul>
 			</div>
 	    </div>
 	</footer>
