@@ -8,30 +8,9 @@ body {
 }
 
 .container {
-	max-width: 1200px;
+	width: 1200px;
 	margin: 0 auto;
 	padding: 0 15px;
-}
-
-.btn {
-	display: inline-block;
-	color: #fff;
-	font-size: 16px;
-	font-weight: 700;
-	letter-spacing: 1px;
-	background: #2196F3;
-	text-decoration: none;
-	padding: 17px;
-	min-width: 200px;
-	cursor: pointer;
-	text-align: center;
-	border-radius: 4px;
-	position: relative;
-	z-index: 5;
-}
-
-.btn:hover {
-	background: #1784dd;
 }
 
 /* HEADER */
@@ -112,12 +91,12 @@ body {
 .burger {
 	width: 34px;
 	height: 20px;
-	/* background: green; */
 	position: absolute;
 	top: 24px;
-	left: 15px;
+	right: 15px;
 	cursor: pointer;
 	z-index: 20;
+	display: none;
 }
 
 .burger::before,
@@ -300,6 +279,27 @@ body {
 	text-align: center;
 	max-width: 700px;
 	margin: 0 auto;
+}
+
+.btn {
+	display: inline-block;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	background: #2196F3;
+	text-decoration: none;
+	padding: 17px;
+	min-width: 200px;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 4px;
+	position: relative;
+	z-index: 5;
+}
+
+.btn:hover {
+	background: #1784dd;
 }
 
 .hero-title {
@@ -778,6 +778,36 @@ body {
     text-align: center;
 	gap: 4px;
 }
+.footer-address{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.map-container {
+	display: none;
+	position: relative;
+	margin-top: 10px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	overflow: hidden;
+  }
+  
+  #map:target {
+	display: block;
+  }
+  
+  .close-btn {
+	position: absolute;
+	top: 8px;
+	right: 10px;
+	text-decoration: none;
+	background: #000;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 2px 10px;
+	border-radius: 4px;
+	z-index: 10;
+  }
 
 .item-category {
     font-weight: 700;
@@ -791,4 +821,208 @@ body {
     font-size: 14px;
     color: #757575;
     letter-spacing: 1px;
+}
+
+
+
+/* 1000px (Tablet Landscape) */
+@media screen and (max-width: 1000px) {
+	.container {
+		width: 100%;
+	}
+
+	.team-cards,
+	.customers-list {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.do-cards{
+		display: none
+	}
+
+	.team-card,
+	.customer-item {
+		flex: 1 1 45%;
+	}
+	.footer-container {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding: 50px 0;
+		
+	}
+
+	/* PORTFOLIO */
+
+	.portfolio-container{
+		padding: 60px 0 58px 0;
+	}
+
+	.portfolio-buttons{
+		display: flex;
+		gap: 15px;
+		justify-content: center;
+	}
+	.portfolio-btn{
+		line-height: 26px;
+	}
+
+	.portfolio-items {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 30px; 
+	}
+	.portfolio-item {
+		padding: 0 15px 0 15px;
+	}
+}
+
+/* 768px (Tablet Portrait) */
+@media screen and (max-width: 768px) {
+	.container {
+		padding: 0 10px;
+	}
+
+	.header-nav,
+	.header-info {
+		display: none;
+	}
+
+	.burger {
+		display: block;
+	}
+	.do-cards, .customers {
+		display: none
+	}
+
+	.team-card,
+	.customer-item {
+		flex: 1 1 50%;
+	}
+
+	.footer-container {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding: 50px 0;
+		
+	}
+
+	.footer-socials {
+		padding-left: 0;
+	}
+
+	/* PORTFOLIO */
+	.portfolio-container{
+		padding: 60px 0 58px 0;
+	}
+
+	.portfolio-buttons{
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+		justify-content: start;
+		padding-left: 15px;
+	}
+	.portfolio-btn{
+		line-height: 26px;
+	}
+
+	.portfolio-items {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.portfolio-item {
+		padding: 0 15px 0 15px;
+	}
+	.item-desc {
+		font-size: 16px;
+	}
+}
+
+
+/* 640px (Mobile) */
+@media screen and (max-width: 640px) {
+	.header-container {
+		height: 100%; /* or any fixed value to ensure space for .hero */
+	}
+	
+	.hero {
+		background: url("../images/background-img-phone.jpg") no-repeat 50%/cover;
+		overflow: hidden; 
+		height: auto; 
+	}
+	.hero-box {
+		padding: 0 15px;
+	}
+
+	.btn{
+		max-width: 200px;
+	}
+
+	.hero-title {
+		font-size: 22px;
+		line-height: 34px;
+		letter-spacing: 2px;
+	}
+
+	.team-card,
+	.customer-item {
+		flex: 1 100%;
+	}
+
+	.customers-title{
+		font-size: 28px;
+	}
+
+	.customers {
+		display: none;
+	}
+
+	.footer-info {
+		gap: 6px;
+	}
+
+	.btn {
+		font-size: 14px;
+		padding: 12px;
+		min-width: 160px;
+	}
+	.footer-container {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding: 50px 0;
+		
+	}
+
+	/* PORTFOLIO */
+
+	.portfolio-container{
+		padding: 60px 0 58px 0;
+	}
+
+	.portfolio-buttons{
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+		justify-content: start;
+		padding-left: 15px;
+	}
+	.portfolio-btn{
+		line-height: 26px;
+	}
+
+	.portfolio-items {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.portfolio-item {
+		padding: 0 15px 0 15px;
+	}	
+	.item-desc {
+		font-size: 16px;
+	}
 }
